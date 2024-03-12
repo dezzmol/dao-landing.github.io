@@ -1,0 +1,12 @@
+.footer {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}

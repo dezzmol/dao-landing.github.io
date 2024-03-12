@@ -1,0 +1,23 @@
+.first-block {
+    background: url("../assets/first-block-bg.png") no-repeat;
+    background-size: cover;
+    height: 691px;
+    display: flex;
+    justify-content: center;
+}
+
+.first-block-container {
+    display: flex;
+}
+
+.first-block-container__left-block {
+
+}
+
+.first-block-container__right-block {
+
+}
+
+.first-block-container-about-block {
+    max-width: 504px;
+}
