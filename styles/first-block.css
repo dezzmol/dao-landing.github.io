@@ -1,21 +1,24 @@
 .first-block {
     background: url("../assets/first-block/first-blokc-bg.png") no-repeat;
     background-size: cover;
-    height: 691px;
+    height: 600px;
     display: flex;
     justify-content: center;
+
+    align-items: stretch;
     padding-top: 80px;
     margin-top: -80px;
 }
 
 .first-block-container {
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .first-block-container__left-block {
-
+    max-width: 400px;
+    min-width: 400px;
 }
 
 .first-block-container__right-block {
@@ -31,7 +34,8 @@
 }
 
 .first-block-video-pc {
-    width: 690px;
+    max-width: 690px;
+    width: auto;
 }
 
 .first-block-container-title-block {
@@ -83,13 +87,13 @@
     max-width: 504px;
 }
 
-.first-block-container-__pretitle {
+.first-block-container__pretitle {
     position: relative;
     color: white;
     font-size: 12px;
 }
 
-.first-block-container-__pretitle::after {
+.first-block-container__pretitle::after {
     left: 0;
     top: 20px;
     position: absolute;
@@ -114,6 +118,11 @@
         background: none;
     }
 
+    .first-block-container {
+        flex-wrap: wrap;
+
+    }
+
     .first-block-container-about-block {
         display: none;
     }
@@ -129,7 +138,7 @@
         margin-bottom: 0;
     }
 
-    .first-block-container-__pretitle::after {
+    .first-block-container__pretitle::after {
         transform: scale(0.85);
         left: -15px
     }
@@ -142,7 +151,7 @@
     }
 
     /* Блок после the future is here */
-    .first-block-container-__pretitle::after {
+    .first-block-container__pretitle::after {
         transform: scale(0.56, 0.5);
         top: -35px;
     }
@@ -159,9 +168,6 @@
         height: 32px;
     }
 
-    .first-block-container__right-block {
-        display: none;
-    }
 
     .first-block-video-on-phone-container {
         display: block;
@@ -173,5 +179,9 @@
     .first-block-container-title-block {
         max-width: 240px;
         margin-left: 50px;
+    }
+
+    .first-block-container-about-block__button-holder {
+        display: none;
     }
 }

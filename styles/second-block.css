@@ -9,12 +9,16 @@
     width: 100%;
     background: url("../assets/second-block/second-block-bg.svg") no-repeat;
     height: 496px;
-    padding-top: 20px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-
-
 .our-vision {
+    display: flex;
+}
+
+.our-vision-text {
     margin-left: 100px;
 }
 
@@ -31,4 +35,30 @@
     max-width: 500px;
     width: 100%;
     font-size: 19px;
+}
+
+@media (max-width: 768px) {
+    .second-block-container {
+        background: url("../assets/second-block/second-block-bg-s.svg") no-repeat;
+        background-size: cover;
+    }
+
+    .our-vision-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .our-vision-title {
+        font-size: 21px;
+    }
+
+    .our-vision-desc {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .second-block-container {
+        transform: scale(0.8);
+    }
 }
