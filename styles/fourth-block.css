@@ -1,7 +1,7 @@
 .fourth-block {
     display: flex;
     justify-content: center;
-    min-height: 600px;
+    min-height: 650px;
 }
 
 .fourth-block-container {
@@ -10,6 +10,7 @@
     max-width: 1000px;
     width: 100%;
     display: flex;
+
 }
 
 .fourth-block-container__join_us {
@@ -131,4 +132,20 @@
 
 .fourth-block__button img {
     height: auto;
+}
+
+.fourth-block-container__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fourth-block-container__image-holder {
+
+}
+
+.fourth-block-container__image-holder img {
+    max-height: 400px;
+    width: 100%;
 }
