@@ -1,46 +1,43 @@
 .first-block {
-    background: url("../assets/first-block/first-blokc-bg.png") no-repeat;
+    background-size: 100%;
+    background: url("../assets/first-block/first-blokc-bg.png") no-repeat center;
     background-size: cover;
-    height: 600px;
+    height: 800px;
     display: flex;
     justify-content: center;
-
     align-items: stretch;
+    flex-direction: column;
     padding-top: 80px;
-    margin-top: -80px;
+    margin-top: -200px;
 }
 
 .first-block-container {
-    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
 }
 
 .first-block-container__left-block {
     max-width: 400px;
-    min-width: 400px;
+    width: 80%;
+    margin-left: 80px;
+    margin-right: 50px;
 }
 
 .first-block-container__right-block {
-
-}
-
-.first-block-video-on-phone-container {
-    display: none;
-}
-
-.first-block-video-phone {
-    width: inherit;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 550px;
 }
 
 .first-block-video-pc {
-    max-width: 690px;
-    width: auto;
+    width: 100%;
 }
 
 .first-block-container-title-block {
     position: relative;
-    max-width: 350px;
+    width: 100%;
 }
 
 .first-block-container-title-block__main-title {
@@ -48,9 +45,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Orbitron, sans-serif;
-    font-size: 48px;
+    font-size: 3em;
     font-weight: 700;
-
     letter-spacing: -1.7999999523162842px;
     text-align: left;
     margin-top: 30px;
@@ -61,7 +57,6 @@
     font-family: Orbitron, sans-serif;
     font-size: 48px;
     font-weight: 700;
-
     letter-spacing: -1.7999999523162842px;
     text-align: left;
     margin-top: 10px;
@@ -103,7 +98,8 @@
 }
 
 .first-block-container-about-block__button-holder {
-
+    display: flex;
+    justify-content: center;
 }
 
 .first-block-container-about-block__buttons {
@@ -128,19 +124,20 @@
     }
 
     .first-block-container-title-block__main-title {
-        font-size: 30px;
+        font-size: 2em;
         margin-bottom: 0;
         margin-top: 10px;
     }
 
     .first-block-container-title-block__sub-title {
-        font-size: 30px;
+        font-size: 2em;
         margin-bottom: 0;
     }
 
     .first-block-container__pretitle::after {
         transform: scale(0.85);
-        left: -15px
+        left: -15px;
+        top: 0;
     }
 
     /* Блок после SUPERAPP */
@@ -169,19 +166,11 @@
     }
 
 
-    .first-block-video-on-phone-container {
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 288px;
-    }
-
     .first-block-container-title-block {
-        max-width: 240px;
-        margin-left: 50px;
+
     }
 
     .first-block-container-about-block__button-holder {
-        display: none;
+        transform: scale(0.85);
     }
 }
