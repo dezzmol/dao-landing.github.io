@@ -3,32 +3,28 @@
     background: url("../assets/first-block/first-blokc-bg.png") no-repeat center;
     background-size: cover;
     height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
     padding-top: 80px;
-    margin-top: -200px;
+    margin: 0 calc(40 / 1920 * 100%);
 }
 
 .first-block-container {
-    padding-left: 10px;
-    padding-right: 10px;
     display: flex;
     justify-content: center;
+    width: calc(1466 / 1840 * 100%);
+    column-gap: calc(30 / 1840 * 100%);
+    margin: 0 calc((157 + 30) / 1840 * 100%);
 }
 
 .first-block-container__left-block {
-    max-width: 400px;
-    width: 80%;
-    margin-left: 80px;
-    margin-right: 50px;
+    max-width: calc(4 * var(--width) + 3 * var(--gutter) / 1840 * 100%);
+    width: 100%;
 }
 
 .first-block-container__right-block {
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 550px;
+    max-width: calc(4 * var(--width) + 3 * var(--gutter) / 1840 * 100%);
+    width: 100%;
 }
 
 .first-block-video-pc {
@@ -63,6 +59,7 @@
     margin-bottom: 10px;
     color: white;
     position: relative;
+    white-space: nowrap;
 }
 
 .first-block-container-title-block__sub-title::after {
@@ -79,7 +76,7 @@
 }
 
 .first-block-container-about-block {
-    max-width: 504px;
+
 }
 
 .first-block-container__pretitle {
@@ -98,15 +95,26 @@
 }
 
 .first-block-container-about-block__button-holder {
+    max-width: calc(4 * var(--width) + 3 * var(--gutter) / 1840 * 100%);
     display: flex;
-    justify-content: center;
+    column-gap: var(--gutter);
+    margin-left: calc( 1 * var(--width) + 1 * var(--gutter) / 1840 * 100%);
 }
 
 .first-block-container-about-block__buttons {
-    width: 222px;
+    display: block;
+    max-width: calc(2 * var(--width) + 1 * var(--gutter) / 1840 * 100%);
+    width: 100%;
     height: 53px;
     border-radius: 10px;
     background: linear-gradient(91.53deg, #A5782B -9.18%, #F4D362 32.46%, #E3C56D 97.37%);
+}
+
+.first-block-container-about-block__buttons button {
+    background: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -116,48 +124,7 @@
 
     .first-block-container {
         flex-wrap: wrap;
-
-    }
-
-    .first-block-container-about-block {
-        display: none;
-    }
-
-    .first-block-container-title-block__main-title {
-        font-size: 2em;
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
-
-    .first-block-container-title-block__sub-title {
-        font-size: 2em;
-        margin-bottom: 0;
-    }
-
-    .first-block-container__pretitle::after {
-        transform: scale(0.85);
-        left: -15px;
-        top: 0;
-    }
-
-    /* Блок после SUPERAPP */
-    .first-block-container-title-block__sub-title::after {
-        transform: scale(0.60, 0.55);
-        left: -125px;
-        top: 25px;
-    }
-
-    /* Блок после the future is here */
-    .first-block-container__pretitle::after {
-        transform: scale(0.56, 0.5);
-        top: -35px;
-    }
-
-    /* Лого */
-    .first-block-container-title-block::after {
-        transform: scale(0.65);
-        bottom: -3px;
-        left: -40px;
+        margin-top: 150px;
     }
 
     .first-block-container-about-block__buttons {
@@ -168,6 +135,15 @@
 
     .first-block-container-title-block {
 
+    }
+
+    .first-block-container-title-block__main-title {
+        font-size: 29px;
+
+    }
+
+    .first-block-container-title-block__sub-title {
+        font-size: 29px;
     }
 
     .first-block-container-about-block__button-holder {

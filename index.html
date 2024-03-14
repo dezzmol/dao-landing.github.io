@@ -14,12 +14,10 @@
     <link rel="stylesheet" href="styles/second-block.css">
     <link rel="stylesheet" href="styles/fourth-block.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
-    <script src="js/animation.js"></script>
-    <script src="js/clickAnimation.js"></script>
     <script src="js/header.js"></script>
     <title>Dao</title>
 </head>
-<body>
+<body class="is-grid">
 <header class="header">
     <section class="header-container">
         <object data="assets/logo.svg" class="header-container__logo"></object>
@@ -57,14 +55,14 @@
             </article>
         </section>
         <div class="first-block-container-about-block__button-holder">
-            <a href="#">
-                <button class="first-block-container-about-block__buttons">
+            <a href="#" class="first-block-container-about-block__buttons">
+                <button >
                     <object data="assets/first-block/simple-icons_googleplay.svg"></object>
                     <object data="assets/first-block/get_it_on_google_play.svg"></object>
                 </button>
             </a>
-            <a href="#">
-                <button class="first-block-container-about-block__buttons">
+            <a href="#"  class="first-block-container-about-block__buttons">
+                <button>
                     <object data="assets/first-block/simple-icons_appstore.svg"></object>
                     <object data="assets/first-block/get_it_on_app_store.svg"></object>
                 </button>
@@ -74,9 +72,9 @@
     <section id="our_vision" class="second-block">
         <section class="second-block-container">
             <div class="second-block-container-content">
-                <div class="our-vision-image">
-                    <object height="400px" data="assets/second-block/ourVisionImage.svg"></object>
-                </div>
+<!--                <div class="our-vision-image">-->
+<!--                    <object data="assets/second-block/ourVisionImage.svg"></object>-->
+<!--                </div>-->
                 <article class="our-vision">
                     <div class="our-vision-text">
                         <h2 class="our-vision-title">WEB 3 - OUR VISION</h2>
@@ -94,9 +92,9 @@
                     </div>
                 </article>
             </div>
-            <div class="second-block-container-phone">
-                <img src="assets/second-block/phone1.png" alt="phone"/>
-            </div>
+<!--            <div class="second-block-container-phone">-->
+<!--                <img src="assets/second-block/phone1.png" alt="phone"/>-->
+<!--            </div>-->
         </section>
     </section>
     <section id="app_showcase" class="third-block">
@@ -110,14 +108,46 @@
                 </div>
                 <div class="join-us__info">
                     <div class="join-us__subscribe">
-                        <h2>Subscribe to our newsletter!</h2>
-                        <p>Never miss an update about the project like videos, posts, podcasts, etc. We will send you e-mails every week.</p>
+                        <h2 class="join-us__subtitle">Subscribe to our newsletter!</h2>
+                        <p>Never miss an update about the project like videos, posts, podcasts, etc. We will send you
+                            e-mails every week.</p>
                         <label class="join-us__input">
                             <input placeholder="Your name"/>
                         </label>
                         <label class="join-us__input">
                             <input placeholder="Your e-mail address"/>
                         </label>
+                        <label class="join-us__checkbox">
+                            <input type="checkbox" class="join-us__checkbox-input"/>
+                            <span class="checkmark"></span>
+                            I have read the <a class="terms-link" href="#">Terms And Conditions</a> and I agree with
+                            data transfer
+                        </label>
+
+                    </div>
+                </div>
+                <div class="fourth-block__links">
+                    <div class="fourth-block__links-container">
+                        <h3 class="fourth-block__links-title">
+                            Subscribe to our channels
+                        </h3>
+                        <div class="fourth-block__button-holder">
+                            <a href="#" class="fourth-block__button">
+                                <button>
+                                    <img src="assets/fourth-block/mingcute_telegram-fill.png" alt="telegram"/>
+                                </button>
+                            </a>
+                            <a href="#" class="fourth-block__button">
+                                <button>
+                                    <img src="assets/fourth-block/simple-icons_x.png" alt="x" />
+                                </button>
+                            </a>
+                            <a href="#" class="fourth-block__button">
+                                <button>
+                                    <img src="assets/fourth-block/mdi_youtube.png" alt="youtube" />
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </article>
