@@ -4,7 +4,6 @@
     background-size: cover;
     height: 800px;
     padding-top: 80px;
-    margin: 0 calc(40 / 1920 * 100%);
 }
 
 .first-block-container {
@@ -88,14 +87,16 @@
     font-size: 12px;
 }
 
-.first-block-container__pretitle::after {
-    left: 0;
-    top: 20px;
-    position: absolute;
-    content: url("../assets/first-block/title-line.svg");
-    width: 100%;
-    height: auto;
-}
+
+
+/*.first-block-container__pretitle::after {*/
+/*    left: 0;*/
+/*    top: 20px;*/
+/*    position: absolute;*/
+/*    content: url("../assets/first-block/title-line.svg");*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
 
 .first-block-container-about-block__button-holder {
     width: 100%;

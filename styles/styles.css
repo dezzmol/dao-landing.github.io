@@ -6,23 +6,7 @@ body {
     background: #151515;
     font-family: 'proxima-nova', sans-serif;
     color: #979797;
-}
-
-body.is-grid::after {
-    content: '';
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    bottom: 0;
-    opacity: 0.15;
-    left: calc(40 / 1920 * 100%);
-    right: calc(40 / 1920 * 100%);
-    background: repeating-linear-gradient(90deg,
-    #00f 0,
-    #00f calc(157 / (1920 - 40 * 2) * 100%),
-    transparent calc(157 / (1920 - 40 * 2) * 100%),
-    transparent calc((157 / (1920 - 40 * 2) + 30 / (1920 - 40 * 2)) * 100%));
-    pointer-events: none;
+    width: 1600px;
 }
 
 :root {
@@ -42,4 +26,8 @@ a {
 svg {
     width: 100%;
     height: auto;
+}
+
+.layout {
+    width: 100%;
 }
