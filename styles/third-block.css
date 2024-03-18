@@ -1,0 +1,180 @@
+.third-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.third-block-container {
+    max-width: 1437px;
+}
+
+.third-block__title {
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    font-size: 32px;
+}
+
+.third-block__app-showcase {
+    position: relative;
+    width: 1437px;
+    height: 756px;
+    background: url("../assets/third-block/Group 383.svg");
+    display: flex;
+
+}
+
+.third-block__buttons-holder {
+    display: flex;
+    width: 614px;
+    flex-wrap: wrap;
+    gap: 13px
+}
+
+.app-showcase__button {
+    width: 194px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background: url("../assets/third-block/button-bg.svg");
+}
+
+.app-showcase__button object {
+    width: 64px;
+    height: auto;
+    pointer-events: none;
+}
+
+.app-showcase__button object.active {
+    filter: invert(0%) sepia(14%) saturate(1939%) hue-rotate(24deg) brightness(123%) contrast(84%);
+}
+
+.app-showcase__button.active {
+    /*background: linear-gradient(84.07deg, #A5782B -18.51%, #C99738 4.32%, #F4D362 23.46%, #FCF8B8 58.64%, #E3C56D 88.89%);*/
+    /*-webkit-mask-image: inherit;*/
+    /*mask-image: inherit;*/
+    filter: invert(72%) sepia(67%) saturate(348%) hue-rotate(2deg) brightness(106%) contrast(91%);
+}
+
+.app-showcase__button--first {
+    background: url("../assets/third-block/first-button-bg.svg");
+}
+
+.app-showcase__button--last {
+    background: url("../assets/third-block/last-button-bg.svg");
+}
+
+.app-showcase__left-block {
+    position: relative;
+    height: 100%;
+}
+
+.app-showcase__right-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.app-showcase__right-block-container {
+    max-width: 726px;
+    width: 100%;
+    position: relative;
+}
+
+.app-showcase__title {
+    font-size: 48px;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: -1.8px;
+    text-align: left;
+    background: linear-gradient(84.07deg, #A5782B -18.51%, #C99738 4.32%, #F4D362 23.46%, #FCF8B8 58.64%, #E3C56D 88.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+
+}
+
+.app-showcase__title-with-span {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    margin-top: 20px;
+}
+
+
+.app-showcase__sub-title {
+    color: white;
+    font-size: 19px;
+}
+
+
+.app-showcase__title span {
+    background: linear-gradient(84.07deg, #A5782B -18.51%, #C99738 4.32%, #F4D362 23.46%, #FCF8B8 58.64%, #E3C56D 88.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.app-showcase__main-image {
+    width: 726px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.nft-marketplace-image {
+    left: -8%;
+}
+
+.app-showcase-desc {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    position: relative;
+    height: 100%;
+    max-height: 350px;
+}
+
+.app-showcase__desc-container {
+    max-width: 600px;
+    width: 100%;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    font-size: 19px;
+    position: relative;
+}
+
+.app-showcase__desc-container-text {
+
+}
+
+.project-and-communities-desc {
+    color: #363636;
+    background: url("../assets/third-block/desc-bg-m.png") no-repeat;
+    padding: 20px 20px;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tag-element {
+    border: 1px white solid;
+    border-radius: 50px;
+    width: 180px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platypus {
+    position: absolute;
+    bottom: 0;
+}
+
+.circle {
+
+}

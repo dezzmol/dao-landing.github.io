@@ -1,44 +1,43 @@
 .second-block {
     display: flex;
-    justify-content: center;
-    margin: 20px calc(40 / 1920 * 100%);
+    min-height: 600px;
+    margin-top: 100px;
 }
 
 .second-block-container {
-    width: calc(8 * var(--width) + 7 * var(--gutter));
+    max-width: 1200px;
+    width: 100%;
     background: url("../assets/second-block/second-block-bg.svg") no-repeat;
-    min-height: 500px;
+    margin: 0 auto;
     position: relative;
     display: flex;
     background-position-y: top;
 }
 
 .second-block-container-content {
-    max-width: calc(6 * var(--width) + 5 * var(--gutter));
     margin-top: 20px;
     display: flex;
-    column-gap: var(--gutter);
 }
 
 .our-vision {
     display: flex;
     width: 100%;
-    /*width: calc((4 * 157 + 3 * 30 / 1840) * 100%);*/
 }
 
 .our-vision-image {
-    width: calc(var(--width) );
     display: flex;
     justify-content: center;
-    align-items: start;
+    width: 150px;
+    margin-top: 20px;
 }
 
 .our-vision-image object {
-    width: 100%;
+    height: 350px;
+
 }
 
 .second-block-container-phone {
-    width: calc(3 * var(--width) + 2 * var(--gutter));
+
 }
 
 .second-block-container-phone img {
@@ -59,7 +58,14 @@
 }
 
 .our-vision-desc {
+    font-family: "Proxima Nova", sans-serif;
+    width: 502px;
     font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+
 }
 
 @media (max-width: 768px) {

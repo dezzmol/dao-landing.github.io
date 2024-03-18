@@ -3,11 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 calc(40 / 1920 * 100%);
+    padding: 0 40px;
+    margin: 0 auto;
 }
 
 .header-container {
-    width: calc(1840 / 1840 * 100%);
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
