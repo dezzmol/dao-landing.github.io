@@ -105,7 +105,7 @@ function changeDesc(id) {
 
     switch (id) {
         case "project-and-communities":
-            desc.className = "project-and-communities-desc"
+            desc.className = "project-and-communities__desc"
             desc.innerHTML = "Pages of various communities and crypto projects. <br>Complete information about the project, its team and partners, <br>community management tools, roles and channels in one place."
             let tags = document.createElement("div")
             tags.className = "tags"
@@ -118,9 +118,25 @@ function changeDesc(id) {
             platypus.className = "platypus"
             let leftBlock = document.querySelector(".app-showcase__desc-container")
             leftBlock.append(platypus)
+
+            let circle = document.createElement("img")
+            circle.src = "../assets/third-block/project-and-communities/Circle.png"
+            circle.className = "circle"
+            leftBlock.append(circle)
+
             break
         case "events":
             desc.innerHTML = "Find information about upcoming events, both real and online. Interactive live map of users and events will allow you to always stay at the crypto party."
+            desc.className = "project-and-communities__desc"
+            let eventTags = document.createElement("div")
+            eventTags.innerHTML = "<div class='tag-element'>Events</div><div class='tag-element'>Meetings</div><div class='tag-element'>Gatherings</div>"
+            eventTags.className = "tags"
+            descHolder.append(eventTags)
+
+            let globe = document.createElement("img")
+            globe.src = "../assets/third-block/events/globe.svg"
+            globe.className = "globe"
+            descHolder.append(globe)
             break
         case "do-and-earn":
             desc.innerHTML = "Find ways to earn money in Web 3 or tools for doing business.<br>" +
@@ -128,19 +144,55 @@ function changeDesc(id) {
                 "Get paid in crypto after your job is done, track your workers progress through API or reports!<br>" +
                 "<br>" +
                 "In order to get access to D&E user needs to hold at least Tier 1 NFT for more than 7 days, with D&E he will be able to generate additional income stream by providing genuine social engagement over multiple platforms."
+
+            desc.className = "do-and-earn__desc"
+
             break
         case "daopeople-nft":
             desc.innerHTML = "Our own NFT collection, created to provide additional benefits to our users and supporters.<br>" +
                 "There will be several “Tiers” for NFTs - the higher the level, the higher the amount of your benefits!<br>" +
                 "Also, while user keeps his NFTs in the Mining Pool, he will recieve additional Token Rewards and % booster in D&E section. "
+
+            desc.className = "daopeople-nft__desc"
+            let daopeopleTags = document.createElement("div")
+            daopeopleTags.innerHTML = "<div class='tag-element'>Uncommon</div><div class='tag-element'>Epic</div><div class='tag-element'>Legendary</div>"
+            daopeopleTags.className = "tags"
+            descHolder.append(daopeopleTags)
+
+            let sinusoid = document.createElement("img")
+            sinusoid.src = "../assets/third-block/daopeople-nft/sinusoid.svg"
+            sinusoid.className = "daopeople-nft__sinusoid"
+            descHolder.append(sinusoid)
+
             break
         case "nft-marketplace":
             desc.innerHTML = "Safely sell or buy NFTs through DAOPEOPLE app."
+            desc.className = "nft-marketplace__first-desc"
+
+            let daoSubtitle = document.createElement("img")
+            daoSubtitle.src = "../assets/third-block/nft-marketplace/dao-subtitle.png"
+            descHolder.append(daoSubtitle)
+
+            let secondDesc = document.createElement("div")
+            secondDesc.innerHTML = "Fully integrated with Trust Wallet technology for smooth and secure experience"
+            secondDesc.className = "nft-marketplace__second-desc"
+
+            descHolder.append(secondDesc)
+
+            let nftMarketplaceTags = document.createElement("div")
+            nftMarketplaceTags.innerHTML = "<div class='tag-element'>Marketplace</div><div class='tag-element'>Trust wallet</div><div class='tag-element'>Safe transactions</div>"
+            nftMarketplaceTags.className = "tags"
+            descHolder.append(nftMarketplaceTags)
             break
         case "business-matching":
             desc.innerHTML = "Find interesting people from the crypto world. Are you at an event and want to get to know its participants better? Or do you just want to find a new team member or partner? Look for new connections with a lot of filters:<br>" +
                 "location, projects, roles, statuses, <br>" +
                 "work experience, gender, interests, communities, and much more"
+            desc.className = "business-matching__desc"
+            let businessMatchingSubtitle = document.createElement("img")
+            businessMatchingSubtitle.src = "../assets/third-block/nft-marketplace/dao-subtitle.png"
+            businessMatchingSubtitle.style.marginTop = "50px"
+            descHolder.append(businessMatchingSubtitle)
             break
     }
 
