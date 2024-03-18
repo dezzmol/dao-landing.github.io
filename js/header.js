@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menuButton.addEventListener('click', function(event) {
         toggleMenu();
-        event.stopPropagation(); // Предотвращаем всплывание события
+        event.stopPropagation();
     });
 
     document.addEventListener('click', function(event) {
         var isClickInsideMenu = navMenu.contains(event.target) || menuButton.contains(event.target);
 
         if (!isClickInsideMenu && navMenu.classList.contains('active')) {
-            toggleMenu(); // Скрыть меню, если нажатие было снаружи
+            toggleMenu();
         }
     });
 });

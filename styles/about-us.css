@@ -1,0 +1,89 @@
+.about-us {
+    display: flex;
+    justify-content: center;
+    background: url("../assets/about-us/bg.png") no-repeat;
+    height: 100%;
+}
+
+.about-us__container {
+    max-width: 1400px;
+    width: 100%;
+
+}
+
+.about-us__title {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 75px;
+    line-height: 44px;
+    letter-spacing: -1.2px;
+    text-align: center;
+}
+
+.first-participants {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 460px;
+    background: url("../assets/about-us/first-participants-bg.svg") no-repeat;
+}
+
+.mid-participants {
+
+}
+
+.last-participants {
+    display: flex;
+    justify-content: space-between;
+    min-height: 475px;
+    background: url("../assets/about-us/last-participants-bg.svg") no-repeat;
+}
+
+.participant {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.participant__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/about-us/avatar-bg.svg") no-repeat;
+    width: 192px;
+    height: 192px
+}
+
+.participant__info {
+    color: white;
+    text-align: center;
+}
+
+.participant__name {
+    position: relative;
+    font-size: 32px;
+}
+
+.participant__name::after {
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    content: "";
+    background: url("../assets/about-us/after-name-line.svg") no-repeat;
+}
+
+.participant__role {
+    margin-top: 20px;
+    font-size: 29px;
+}
+
+.participant__desc {
+    margin-top: 10px;
+    color: #868686;
+
+}
+

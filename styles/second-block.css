@@ -54,7 +54,7 @@
     -webkit-text-fill-color: transparent;
     font-family: Orbitron, sans-serif;
     font-weight: 700;
-
+    font-size: 32px;
 }
 
 .our-vision-desc {
@@ -69,23 +69,41 @@
 }
 
 @media (max-width: 768px) {
-    .second-block-container {
-        background: url("../assets/second-block/Vector 147.png") no-repeat ;
-        background-size: 100% auto;
-        background-position-y: bottom;
-
-        flex-wrap: wrap;
+    .second-block {
+        padding: 20px;
     }
 
-    .our-vision-text {
+    .second-block-container {
+        background: url("../assets/second-block/bg-s.svg") no-repeat;
+        background-size: 100% auto;
+        background-position-y: bottom;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 1200px;
+    }
 
+    .second-block-container-content {
+        margin-top: 0;
+    }
+
+    .our-vision-image {
+        display: none;
     }
 
     .our-vision-title {
-
+        font-size: 48px;
+        margin-bottom: 0;
     }
 
     .our-vision-desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 17px;
+        width: 550px;
+    }
 
+    .second-block-container-phone {
+        min-width: 620px;
     }
 }
