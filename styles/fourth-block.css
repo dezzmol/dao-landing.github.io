@@ -3,6 +3,7 @@
     justify-content: center;
     min-height: 740px;
     margin-bottom: 100px;
+    margin-top: 200px;
 }
 
 .fourth-block-container {
@@ -209,5 +210,60 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        background: none;
+        gap: 250px;
+    }
+
+    .join-us__title_holder {
+        background: url("../assets/fourth-block/title-bg-s.svg") no-repeat;
+        background-size: 100%;
+    }
+
+    .fourth-block-container__join_us {
+        transform: scale(1.2);
+        height: auto;
+    }
+
+    .join-us__info {
+        background: url("../assets/fourth-block/join-us-bg-s.svg") no-repeat;
+        background-size: 100%;
+        height: 440px;
+    }
+
+    .join-us__info::after {
+        bottom: -32px;
+        left: 193px;
+    }
+
+    .join-us__subscribe {
+
+    }
+
+    .fourth-block__links {
+        transform: scale(2);
+        margin-top: 80px;
+    }
+
+    .fourth-block__links-title {
+        margin-top: 10px;
+    }
+
+    .fourth-block__links-container {
+        margin-right: 0;
+    }
+
+    .fourth-block-container__image-holder img {
+        max-height:800px;
+        height: 100%;
+        width: 700px;
+    }
+
+    .fourth-block-container__circle {
+        display: none;
+    }
+
+    .fourth-block-container__cube {
+        top: 345px;
+        right: 10px;
     }
 }

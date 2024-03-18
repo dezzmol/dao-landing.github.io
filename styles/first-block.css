@@ -6,6 +6,7 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+
 }
 
 .first-block-container {
@@ -160,6 +161,7 @@
 
     .first-block {
         background: none;
+        margin-top: 20px;
     }
 
     .first-block-container {
@@ -167,10 +169,12 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 40px;
     }
 
     .first-block-container__left-block {
         width: auto;
+        transform: scale(1.4);
     }
 
     .first-block-container-about-block__buttons {

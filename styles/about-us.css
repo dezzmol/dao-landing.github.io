@@ -1,14 +1,76 @@
+.about-us__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.arrow-1 {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 20px;
+}
+.arrow-1 div {
+    position: relative;
+    top: 20px;
+    width: 90px;
+    height: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    left:0;
+    display: block;
+}
+.arrow-1 div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    top: -12px;
+    right: 60px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transform: rotate(135deg);
+}
+.arrow-1 div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    top: 12px;
+    right: 60px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-135deg);
+}
+
+.about-us__header-container {
+    max-width: 1400px;
+    width: 100%;
+    color: white;
+    font-size: 32px;
+    font-family: "Orbitron", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.about-us__header-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-us {
     display: flex;
     justify-content: center;
     background: url("../assets/about-us/bg.png") no-repeat;
-    height: 100%;
 }
 
 .about-us__container {
     max-width: 1400px;
     width: 100%;
-
 }
 
 .about-us__title {
@@ -20,27 +82,34 @@
     text-align: center;
 }
 
-.first-participants {
-    padding: 0 30px;
+.list-participants {
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
+}
+
+.first-participants {
     min-height: 460px;
     background: url("../assets/about-us/first-participants-bg.svg") no-repeat;
+    background-position-y: 58px;
 }
 
 .mid-participants {
-
+    min-height: 460px;
+    position: relative;
+    border-left: 3px white solid;
+    border-right: 3px white solid;
 }
 
+
 .last-participants {
-    display: flex;
-    justify-content: space-between;
     min-height: 475px;
     background: url("../assets/about-us/last-participants-bg.svg") no-repeat;
+    padding: 50px 200px;
 }
 
 .participant {
-    max-width: 250px;
+    max-width: 270px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -59,6 +128,7 @@
 .participant__info {
     color: white;
     text-align: center;
+    margin-top: 15px;
 }
 
 .participant__name {
@@ -74,6 +144,7 @@
     width: 100%;
     content: "";
     background: url("../assets/about-us/after-name-line.svg") no-repeat;
+    background-size: auto 100%;
 }
 
 .participant__role {

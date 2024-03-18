@@ -78,7 +78,15 @@
 
 @media (max-width: 768px) {
     .header {
-        height: 65px;
+        height: 150px;
+        transform: scale(2.4);
+    }
+
+    .header-container {
+        max-width: 768px;
+        justify-content: center;
+        width: 100%;
+        gap: 215px;
     }
     .header-menu-button {
         display: block;
