@@ -24,7 +24,7 @@ svg {
 }
 
 .layout {
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   min-width: 100%;
   padding: 0;
@@ -36,5 +36,9 @@ svg {
   body {
     width: 768px;
     margin: 0;
+  }
+
+  .layout {
+    overflow: hidden;
   }
 }
