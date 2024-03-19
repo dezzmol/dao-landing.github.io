@@ -25,7 +25,7 @@
 .third-block__app-showcase {
     position: relative;
     height: 756px;
-    background: url("../assets/third-block/Group 383.svg");
+    background: url("../assets/third-block/app-showcase-pc-bg.svg");
     display: flex;
 
 }
@@ -53,6 +53,7 @@
 }
 
 .app-showcase__button object.active {
+    /*z-index: 10;*/
     filter: invert(0%) sepia(14%) saturate(1939%) hue-rotate(24deg) brightness(123%) contrast(84%);
 }
 
@@ -60,7 +61,8 @@
     /*background: linear-gradient(84.07deg, #A5782B -18.51%, #C99738 4.32%, #F4D362 23.46%, #FCF8B8 58.64%, #E3C56D 88.89%);*/
     /*-webkit-mask-image: inherit;*/
     /*mask-image: inherit;*/
-    filter: invert(72%) sepia(67%) saturate(348%) hue-rotate(2deg) brightness(106%) contrast(91%);
+    /*filter: invert(72%) sepia(67%) saturate(348%) hue-rotate(2deg) brightness(106%) contrast(91%);*/
+    background: url("../assets/third-block/active-button.png");
 }
 
 .app-showcase__button--first {
@@ -69,6 +71,14 @@
 
 .app-showcase__button--last {
     background: url("../assets/third-block/last-button-bg.svg");
+}
+
+.app-showcase__button--first.active {
+    background: url("../assets/third-block/first-active-button.png");
+}
+
+.app-showcase__button--last.active {
+    background: url("../assets/third-block/last-active-button.png");
 }
 
 .app-showcase__left-block {
