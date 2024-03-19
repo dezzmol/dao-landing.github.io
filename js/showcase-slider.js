@@ -12,7 +12,9 @@ function initSlider() {
   let currentIndex = 0;
   // Скрытие стрелки назад в начале
   nextButton.addEventListener("click", () => {
-    currentIndex++;
+    if (currentIndex < 5) {
+      currentIndex++;
+    }
     slider.scrollTo({
       left: currentIndex * 300,
       behavior: "smooth",
@@ -20,7 +22,9 @@ function initSlider() {
   });
 
   prevButton.addEventListener("click", () => {
-    currentIndex--;
+    if (currentIndex > 0) {
+      currentIndex--;
+    }
     slider.scrollTo({
       left: currentIndex * 300,
       behavior: "smooth",

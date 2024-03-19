@@ -5,6 +5,7 @@
     align-items: center;
     padding: 0 40px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .header-container {
@@ -75,6 +76,75 @@
     display: block;
 }
 
+.nav-menu {
+    display: none;
+    width: 100%;
+    max-width: 768px;
+}
+
+.nav-menu__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 370px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.nav-menu__element {
+    font-size: 68px;
+    font-family: "Orbitron", sans-serif;
+    line-height: 39px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-menu__list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu__list li:not(:last-child)::after {
+    content: "";
+    background: url("../assets/nav-menu-line.svg") no-repeat center;
+    height: 10px;
+    width: 500px;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+}
+
+.nav-menu__title {
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+    background: linear-gradient(84.07deg, #A5782B -18.51%, #C99738 4.32%, #F4D362 23.46%, #FCF8B8 58.64%, #E3C56D 88.89%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    letter-spacing: -1.8px;
+    margin-left: 20px;
+}
+
+.nav-menu__container {
+    margin-top: 20px;
+    position: relative;
+}
+
+.nav-menu__star {
+    position: absolute;
+    right: 60px;
+    top: 97px;
+}
+
+#our_vision {
+    margin-top: 50px;
+    padding-top: -50px;
+}
 
 @media (max-width: 768px) {
     .header {
@@ -87,16 +157,33 @@
         justify-content: center;
         width: 100%;
         gap: 215px;
+        position: relative;
     }
+
     .header-menu-button {
         display: block;
         border: white 0.5px solid;
         border-radius: 5px;
     }
+
     .header-nav-menu {
         display: none;
     }
-    .header-nav-menu.active {
+
+    .nav-menu.active {
         display: block;
+        position: absolute;
+        top: 80px;
+        background: url("../assets/header-mobile-bg.svg") no-repeat center;
+        background-size: 100%;
+        width: 100%;
+        z-index: 99;
+        height: 580px;
+        margin-top: 80px;
+    }
+
+    .header-menu {
+        align-items: center;
+        flex-direction: column;
     }
 }

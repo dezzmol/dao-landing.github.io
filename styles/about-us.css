@@ -85,7 +85,7 @@
 .list-participants {
     padding: 0 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .first-participants {
@@ -158,3 +158,46 @@
 
 }
 
+@media (max-width: 768px) {
+    .team-container {
+        padding: 0 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .list-participants {
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        padding: 31px 18px;
+        margin: 0 -7px;
+    }
+    .first-participants {
+        background: url("../assets/about-us/top-mobile-bg-2.svg") no-repeat center top;
+        background-size: 100%;
+    }
+
+    .mid-participants {
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        border-left: 3px #8a8a8a solid;
+        border-right: 3px #8a8a8a solid;
+    }
+
+    .mid-participants::after {
+        position: absolute;
+        background: url("../assets/about-us/mid-mobile-bg.svg") no-repeat;
+        height: 700px;
+        z-index: -1;
+        background-size: 100%;
+    }
+    .last-participants {
+        background: url("../assets/about-us/bottom-mobile-bg.svg") no-repeat;
+        background-size: 100%;
+        background-position-y: bottom;
+        padding: 0 40px;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

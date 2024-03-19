@@ -43,6 +43,7 @@
     display: flex;
     justify-content: center;
     background: url("../assets/third-block/button-bg.svg");
+    transition: all 0.5s;
 }
 
 .app-showcase__button object {
@@ -96,6 +97,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
+    transition: all 0.5s;
 
 }
 

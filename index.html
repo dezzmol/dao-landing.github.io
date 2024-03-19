@@ -22,6 +22,7 @@
   </head>
   <body>
     <div class="layout">
+
       <header class="header">
         <section class="header-container">
           <object
@@ -54,10 +55,35 @@
           </nav>
         </section>
       </header>
+      <div class="nav-menu">
+        <div class="nav-menu__container">
+          <span class="nav-menu__title">DAOPEOPLE</span>
+          <ul class="nav-menu__list">
+            <li>
+              <a href="#our_vision" class="nav-menu__element"
+              >OUR VISION</a
+              >
+            </li>
+            <li>
+              <a href="#mobile-showcase" class="nav-menu__element"
+              >APP SHOWCASE</a
+              >
+            </li>
+            <li>
+              <a href="#join_us" class="nav-menu__element"
+              >JOIN US</a
+              >
+            </li>
+          </ul>
+          <object class="nav-menu__star" width="50px" data="assets/header-nav-menu-star.svg"></object>
+        </div>
+      </div>
       <main class="main">
+        <div class="first-block__bg"></div>
+
         <section class="first-block">
-          <div class="first-block__bg"></div>
           <section class="first-block-container">
+
             <article class="first-block-container__left-block">
               <div class="first-block-container-title-block">
                 <span class="first-block-container__pretitle"
@@ -202,7 +228,7 @@
             </div>
           </section>
           <div class="showcases--mobile">
-            <h2 class="showcases__title">APP SHOWCASE</h2>
+            <h2 class="showcases__title" id="mobile-showcase">APP SHOWCASE</h2>
             <div id="showcases-slider">
               <div class="showcases__slider">
                 <div class="showcases__slider-item showcase">
@@ -311,11 +337,11 @@
           </div>
           <script lang="js" src="./js/adaptive-scale.js"></script>
         </section>
-        <section id="join_us" class="fourth-block">
+        <section  class="fourth-block">
           <section class="fourth-block-container">
             <article class="fourth-block-container__join_us">
               <div class="join-us__title_holder">
-                <h2 class="join-us__title">JOIN US</h2>
+                <h2 class="join-us__title" id="join_us">JOIN US</h2>
               </div>
               <div class="join-us__info">
                 <div class="join-us__subscribe">
@@ -402,4 +428,5 @@
   </body>
   <script src="js/app-showcase.js"></script>
   <script src="js/adaptive-scale.js"></script>
+  <script src="js/showcase-slider.js"></script>
 </html>
