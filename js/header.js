@@ -2,9 +2,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var menuButton = document.querySelector('.header-menu-button');
     var navMenu = document.querySelector('.nav-menu');
     const bg = document.querySelector(".first-block__bg")
+    const buttonContent = document.querySelector(".header-menu-button__content")
     bg.addEventListener("click", event => event.stopPropagation())
+    let isClicked = false;
     function toggleMenu() {
+        if (isClicked) {
+            let header = document.querySelector(".header")
+            header.style.marginTop = "80px"
+        }
         navMenu.classList.toggle('active');
+        if (isClicked) {
+            navMenu.style.top = "160px"
+        }
+        buttonContent.classList.toggle("active")
     }
 
     menuButton.addEventListener('click', function(event) {
@@ -27,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             // Закрываем меню, если оно открыто
             if (navMenu.classList.contains('active')) {
+                isClicked = true;
                 toggleMenu();
             }
         });
