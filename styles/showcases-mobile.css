@@ -225,6 +225,7 @@
   z-index: 2;
   right: 25px;
   bottom: 50px;
+  max-width: 100px;
 }
 
 .showcase-2_screen-2 {
@@ -232,6 +233,7 @@
   z-index: 2;
   bottom: 50px;
   left: 40px;
+  max-width: 77px;
 }
 
 .showcase__text-event {
@@ -247,6 +249,7 @@
   z-index: 2;
   bottom: 10px;
   left: 40px;
+  width: 83px;
 }
 
 .showcase-3_screen-2 {
@@ -254,6 +257,8 @@
   z-index: 2;
   bottom: 10px;
   right: 20px;
+  width: 83px;
+
 }
 
 .showcase__text.showcase-4__text {
@@ -265,6 +270,7 @@
   z-index: 2;
   bottom: 30px;
   left: 40px;
+  width: 93px;
 }
 
 .showcase-4_screen-2 {
@@ -272,6 +278,7 @@
   z-index: 2;
   bottom: 30px;
   right: 20px;
+  width: 93px;
 }
 
 .showcase-4_platypus {
@@ -279,6 +286,7 @@
   z-index: 2;
   top: 0;
   right: 0;
+  width: 100px;
 }
 
 .showcase__text.showcase-5__text-1 {
@@ -300,6 +308,7 @@
   z-index: 2;
   bottom: 20px;
   left: 40px;
+  width: 94px;
 }
 
 .showcase-5_screen-2 {
@@ -307,6 +316,7 @@
   z-index: 2;
   bottom: 95px;
   right: 10px;
+  width: 94px;
 }
 
 .showcase__text.showcase-6__text-1 {
@@ -317,7 +327,8 @@
   position: absolute;
   z-index: 2;
   right: 0;
-  bottom: 20px;
+  bottom: 70px;
+  width: 150px;
 }
 
 .showcase-6_platypus {
@@ -325,4 +336,5 @@
   z-index: 2;
   bottom: 0;
   left: 40px;
+  width: 140px;
 }
