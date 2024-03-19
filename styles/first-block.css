@@ -24,11 +24,12 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    background-size: 100% 100%;
+    background-size: 120% auto;
     max-width: 100vw;
     height: 800px;
     width: 100vw;
     min-width: 100%;
+    pointer-events: none;
 }
 
 .first-block-container__left-block {
