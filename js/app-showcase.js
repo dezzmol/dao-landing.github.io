@@ -114,13 +114,13 @@ function changeDesc(id) {
             descHolder.append(tags)
 
             let platypus = document.createElement("img")
-            platypus.src = "../assets/third-block/project-and-communities/platypus.png"
+            platypus.src = "./assets/third-block/project-and-communities/platypus.png"
             platypus.className = "platypus"
             let leftBlock = document.querySelector(".app-showcase__desc-container")
             leftBlock.append(platypus)
 
             let circle = document.createElement("img")
-            circle.src = "../assets/third-block/project-and-communities/Circle.png"
+            circle.src = "./assets/third-block/project-and-communities/Circle.png"
             circle.className = "circle"
             leftBlock.append(circle)
 
@@ -134,7 +134,7 @@ function changeDesc(id) {
             descHolder.append(eventTags)
 
             let globe = document.createElement("img")
-            globe.src = "../assets/third-block/events/globe.svg"
+            globe.src = "./assets/third-block/events/globe.svg"
             globe.className = "globe"
             descHolder.append(globe)
             break
@@ -160,7 +160,7 @@ function changeDesc(id) {
             descHolder.append(daopeopleTags)
 
             let sinusoid = document.createElement("img")
-            sinusoid.src = "../assets/third-block/daopeople-nft/sinusoid.svg"
+            sinusoid.src = "./assets/third-block/daopeople-nft/sinusoid.svg"
             sinusoid.className = "daopeople-nft__sinusoid"
             descHolder.append(sinusoid)
 
@@ -170,7 +170,7 @@ function changeDesc(id) {
             desc.className = "nft-marketplace__first-desc"
 
             let daoSubtitle = document.createElement("img")
-            daoSubtitle.src = "../assets/third-block/nft-marketplace/dao-subtitle.png"
+            daoSubtitle.src = "./assets/third-block/nft-marketplace/dao-subtitle.png"
             descHolder.append(daoSubtitle)
 
             let secondDesc = document.createElement("div")
@@ -190,7 +190,7 @@ function changeDesc(id) {
                 "work experience, gender, interests, communities, and much more"
             desc.className = "business-matching__desc"
             let businessMatchingSubtitle = document.createElement("img")
-            businessMatchingSubtitle.src = "../assets/third-block/nft-marketplace/dao-subtitle.png"
+            businessMatchingSubtitle.src = "./assets/third-block/nft-marketplace/dao-subtitle.png"
             businessMatchingSubtitle.style.marginTop = "50px"
             descHolder.append(businessMatchingSubtitle)
             break
@@ -205,22 +205,22 @@ function changeImage(id) {
 
     switch (id) {
         case "project-and-communities":
-            image.src = "../assets/third-block/project-and-communities/main-img.png"
+            image.src = "./assets/third-block/project-and-communities/main-img.png"
             break
         case "events":
-            image.src = "../assets/third-block/events/main-img.png"
+            image.src = "./assets/third-block/events/main-img.png"
             break
         case "do-and-earn":
-            image.src = "../assets/third-block/do-and-earn/main-img.png"
+            image.src = "./assets/third-block/do-and-earn/main-img.png"
             break
         case "daopeople-nft":
-            image.src = "../assets/third-block/daopeople-nft/main-img.png"
+            image.src = "./assets/third-block/daopeople-nft/main-img.png"
             break
         case "nft-marketplace":
-            image.src = "../assets/third-block/nft-marketplace/main-img.png"
+            image.src = "./assets/third-block/nft-marketplace/main-img.png"
             break
         case "business-matching":
-            image.src = "../assets/third-block/business-matching/main-img.png"
+            image.src = "./assets/third-block/business-matching/main-img.png"
             break
     }
 
