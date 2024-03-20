@@ -141,12 +141,14 @@
 .first-block-container-about-block__pc-button-holder {
     display: flex;
     gap: 20px;
+    pointer-events: all;
 }
 
 .first-block-container-about-block__mobile-button-holder {
     display: none;
     gap: 20px;
     margin-left: 250px;
+    pointer-events: all;
 }
 
 .first-block-container-about-block__buttons {

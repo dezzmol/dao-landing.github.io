@@ -4,6 +4,7 @@
     min-height: 740px;
     margin-bottom: 100px;
     margin-top: 200px;
+    pointer-events: all;
 }
 
 .fourth-block-container {
