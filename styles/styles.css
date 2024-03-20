@@ -7,8 +7,9 @@ body {
   color: #979797;
   width: 1600px;
   margin: 0 auto;
-  overflow-x: hidden;
+
 }
+
 
 .main {
   overflow: visible;
@@ -33,6 +34,18 @@ svg {
   padding: 0;
   margin: 0;
   position: relative;
+}
+
+.layout::after {
+  z-index: 100;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../assets/Dust.svg");
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
