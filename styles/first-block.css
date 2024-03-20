@@ -1,6 +1,6 @@
 .first-block {
     height: 800px;
-    margin-top: -160px;
+    margin-top: -320px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -173,7 +173,7 @@
 
     .first-block {
         background: none;
-        margin-top: 120px;
+        margin-top: -60px;
         padding-left: 0;
     }
 

@@ -12,6 +12,8 @@ body {
 
 .main {
   overflow: visible;
+  margin-top: 240px;
+  pointer-events: none;
 }
 
 a {
@@ -37,6 +39,10 @@ svg {
   body {
     width: 768px;
     margin: 0;
+  }
+
+  .main {
+    margin-top: 160px;
   }
 
   .layout {

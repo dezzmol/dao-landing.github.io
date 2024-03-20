@@ -5,7 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonContent = document.querySelector(".header-menu-button__content")
     bg.addEventListener("click", event => event.stopPropagation())
     let isClicked = false;
+
+    window.addEventListener("resize", function() {
+        const widthOutput = window.innerWidth;
+        if (widthOutput > 769) {
+            let header = document.querySelector(".header")
+            header.style.marginTop = "0px"
+        }
+
+    } )
+
     function toggleMenu() {
+        const widthOutput = window.innerWidth;
+        if (widthOutput > 769) {
+            return
+        }
         if (isClicked) {
             let header = document.querySelector(".header")
             header.style.marginTop = "80px"
