@@ -89,16 +89,24 @@
   box-shadow: 0px 0px 3.5999999046325684px 0px #f4d362;
 }
 
-.showcases__arrow::after {
-  content: "";
-  display: block;
-  background: #ffffff;
-  width: 56px;
-  height: 2px;
-}
+/*.showcases__arrow::after {*/
+/*  content: "";*/
+/*  display: block;*/
+/*  background: #ffffff;*/
+/*  width: 56px;*/
+/*  height: 2px;*/
+/*}*/
 
 .showcases__arrow--left {
   margin-right: 10px;
+}
+
+.showcases__arrow--left::after {
+  content: url("../assets/showcases/left-arrow.svg");
+}
+
+.showcases__arrow--right::after {
+  content: url("../assets/showcases/right-arrow.svg");
 }
 
 /* SHOWCASE ITEM */
