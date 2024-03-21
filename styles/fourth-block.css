@@ -215,8 +215,15 @@
         gap: 250px;
     }
 
+    .join-us__title {
+        font-size: 39px;
+        width: auto;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
     .join-us__title_holder {
-        background: url("../assets/fourth-block/title-bg-s.svg") no-repeat;
+        background: url("../assets/fourth-block/title-bg-s.svg") no-repeat center;
         background-size: 100%;
     }
 
@@ -236,8 +243,12 @@
         left: 193px;
     }
 
-    .join-us__subscribe {
+    .join-us__subtitle {
+        font-size: 15px;
+    }
 
+    .join-us__desc {
+        font-size: 9px;
     }
 
     .fourth-block__links {

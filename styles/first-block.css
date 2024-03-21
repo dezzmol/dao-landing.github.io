@@ -195,6 +195,7 @@
 
     .first-block-container__left-block {
         width: auto;
+        transform-origin: top;
         transform: scale(1.4);
     }
 

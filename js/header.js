@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonContent = document.querySelector(".header-menu-button__content")
     bg.addEventListener("click", event => event.stopPropagation())
     let isClicked = false;
-
+    const main = document.querySelector(".main")
     window.addEventListener("resize", function() {
         const widthOutput = window.innerWidth;
         if (widthOutput > 769) {
@@ -20,14 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (widthOutput > 769) {
             return
         }
-        if (isClicked) {
-            let header = document.querySelector(".header")
-            header.style.marginTop = "80px"
-        }
+        // if (isClicked) {
+        //     let header = document.querySelector(".header")
+        //     header.style.marginTop = "80px"
+        // }
+        main.classList.toggle("active");
         navMenu.classList.toggle('active');
-        if (isClicked) {
-            navMenu.style.top = "160px"
-        }
+        // if (isClicked) {
+        //     navMenu.style.top = "160px"
+        // }
         buttonContent.classList.toggle("active")
     }
 

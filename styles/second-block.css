@@ -71,6 +71,7 @@
 @media (max-width: 768px) {
     .second-block {
         padding: 20px;
+        min-height: auto;
     }
 
     .second-block-container {
@@ -80,7 +81,11 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        height: 1200px;
+        max-width: 290px;
+    }
+
+    .our-vision-text {
+        margin-left: 24px;
     }
 
     .second-block-container-content {
@@ -92,18 +97,20 @@
     }
 
     .our-vision-title {
-        font-size: 48px;
+        font-size: 21px;
         margin-bottom: 0;
     }
 
     .our-vision-desc {
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 17px;
-        width: 550px;
+        font-size: 8px;
+        line-height: 8px;
+        letter-spacing: -0.07px;
+        width: 230px;
     }
 
     .second-block-container-phone {
-        min-width: 620px;
+        max-width: 260px;
     }
 }
