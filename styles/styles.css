@@ -52,6 +52,9 @@ svg {
   body {
     width: 768px;
     margin: 0;
+    @-ms-viewport {
+      width: 768px;
+    }
   }
 
   .main {
