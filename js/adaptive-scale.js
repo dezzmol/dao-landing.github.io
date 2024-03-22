@@ -6,3 +6,12 @@ document.addEventListener("resize", function () {
         document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');
     }
 })
+
+// function resetZoom() {
+//     console.log(document.body.style.zoom)
+//     var scale = 'scale(1)';
+//     document.body.style.zoom = 1.0;
+//     document.body.style.transform = scale;
+// }
+//
+// window.onload = resetZoom
