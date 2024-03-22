@@ -184,6 +184,7 @@
         z-index: 99;
         height: 580px;
         margin-top: 80px;
+        pointer-events: all;
     }
 
     .header-menu-button__content.active {

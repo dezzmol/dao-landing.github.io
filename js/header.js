@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonContent = document.querySelector(".header-menu-button__content")
     bg.addEventListener("click", event => event.stopPropagation())
     let isClicked = false;
-
+    console.log(navMenu)
     window.addEventListener("resize", function() {
         const widthOutput = window.innerWidth;
         if (widthOutput > 769) {
