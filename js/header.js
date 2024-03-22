@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonContent = document.querySelector(".header-menu-button__content")
     bg.addEventListener("click", event => event.stopPropagation())
     let isClicked = false;
-    console.log(navMenu)
+    const main = document.querySelector(".main")
+    window.location.hash = '';
     window.addEventListener("resize", function() {
         const widthOutput = window.innerWidth;
         if (widthOutput > 769) {
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let header = document.querySelector(".header")
             header.style.marginTop = "80px"
         }
+        main.classList.toggle("active");
         navMenu.classList.toggle('active');
         if (isClicked) {
             navMenu.style.top = "160px"
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menuLinks.forEach(function(link) {
         link.addEventListener('click', function() {
             // Закрываем меню, если оно открыто
+            window.location.hash = '';
             if (navMenu.classList.contains('active')) {
                 isClicked = true;
                 toggleMenu();
