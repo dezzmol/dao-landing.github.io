@@ -17,6 +17,17 @@ body {
   pointer-events: none;
 }
 
+.main.active::after  {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
 a {
   color: inherit;
   text-decoration: none;
