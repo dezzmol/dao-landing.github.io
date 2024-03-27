@@ -33,6 +33,16 @@
     pointer-events: none;
 }
 
+.first-block__bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(21, 21, 21, 1), rgba(0, 0, 0, 0));
+}
+
 .first-block-container__left-block {
     width: 100%;
 }
