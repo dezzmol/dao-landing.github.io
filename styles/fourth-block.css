@@ -72,7 +72,7 @@
 .join-us__info::after {
     content: url("../assets/fourth-block/after-info.svg");
     position: absolute;
-    bottom: -102px;
+    bottom: -58px;
     left: 120px;
 }
 
@@ -89,6 +89,7 @@
     letter-spacing: -1.2000000476837158px;
     text-align: left;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .join-us__desc {
@@ -108,6 +109,32 @@
     margin-bottom: 20px;
     border: 1px white solid;
     border-radius: 5px;
+}
+
+.join-us__submit {
+    display: block;
+    width: 100%;
+    height: 53px;
+    margin-bottom: 20px;
+}
+
+.join-us__submit-button {
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0;
+    color: rgb(123, 123, 123);
+    background: #212121;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.join-us__submit-button.active {
+    background: linear-gradient(84.07deg, #A5782B -18.51%, #C99738 4.32%, #F4D362 23.46%, #FCF8B8 58.64%, #E3C56D 88.89%);
+    color: #212121;
 }
 
 .join-us__input input {
@@ -147,7 +174,7 @@
 .fourth-block__links {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .fourth-block__links-container {
