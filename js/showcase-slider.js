@@ -37,3 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
     initSlider();
   }
 });
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 769) {
+    initSlider();
+  }
+});
