@@ -160,6 +160,7 @@
 }
 
 .first-block-container-about-block__buttons button {
+    border: 0;
     outline: none;
     background: none;
     padding: 0;
@@ -207,8 +208,9 @@
     }
 
     .first-block-container-about-block__mobile-button-holder {
-        margin-left: 150px;
+        margin-left: 185px;
         display: flex;
+        transform: scale(1.5);
     }
 
     .first-block-container-about-block {
